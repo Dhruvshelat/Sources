@@ -1,0 +1,171 @@
+﻿ <-1> 22/11/2018 09:55:25.670     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
+ <-1> 22/11/2018 13:27:27.306     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
+ <-1> 22/11/2018 14:06:17.265     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
+ <-1> 22/11/2018 15:55:23.058     [Error  ] - [MgGui.dll] System.NullReferenceException : 
+   at com.magicsoftware.unipaas.management.tasks.TaskBase.getCtrl(Int32 ctrlIdx) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\management\tasks\TaskBase.cs:line 150
+   at com.magicsoftware.rte.CoreExecutor.EnableCutCopy(Int64 contextID, String taskTag, Int32 ditIdx, Boolean enable) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\CoreExecutor.cs:line 510
+   at com.magicsoftware.rte.GuiEventsProcessor.EnableCutCopy(GuiMgControl ctrl, Boolean enable) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\GuiEventsProcessor.cs:line 243
+   at com.magicsoftware.unipaas.Events.OnEnableCutCopy(GuiMgControl ctrl, Boolean enable) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Events.cs:line 523
+   at com.magicsoftware.unipaas.gui.low.GuiUtilsBase.enableDisableEvents(Object control, GuiMgControl editControl) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiUtils.cs:line 2161
+   at com.magicsoftware.unipaas.gui.low.GuiCommandQueueBase.selectText(GuiCommand guiCommand) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiCommandQueue.cs:line 5780
+   at com.magicsoftware.unipaas.gui.low.GuiCommandQueueBase.Run() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiCommandQueue.cs:line 3574
+Object reference not set to an instance of an object.
+ <-1> 22/11/2018 15:55:23.065     [Error  ] - [MgGui.dll] 
+   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at com.magicsoftware.util.OSEnvironment.getStackTrace()
+   at com.magicsoftware.rte.CoreExecutor.WriteExceptionToLog(Int64 contextID, String msg) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\CoreExecutor.cs:line 116
+   at com.magicsoftware.rte.GuiEventsProcessor.WriteExceptionToLog(String message) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\GuiEventsProcessor.cs:line 1110
+   at com.magicsoftware.unipaas.Events.WriteExceptionToLog(String msg) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Events.cs:line 1413
+   at com.magicsoftware.unipaas.Events.WriteExceptionToLog(Exception ex) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Events.cs:line 1419
+   at com.magicsoftware.unipaas.gui.low.GuiCommandQueueBase.Run() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiCommandQueue.cs:line 4077
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(ApplicationContext context)
+   at com.magicsoftware.unipaas.gui.low.GUIMain.messageLoop() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GUIMain.cs:line 101
+   at com.magicsoftware.unipaas.Manager.MessageLoop() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Manager.cs:line 293
+   at com.magicsoftware.rte.RTEmanager.ExecuteMainThread(String args) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\Main.cs:line 138
+   at com.magicsoftware.rte.RTEmanager.Main() in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\Main.cs:line 63
+ <-1> 22/11/2018 16:03:52.448     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
+ <-1> 23/11/2018 10:27:50.198     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
+ <571713145689985856> 23/11/2018 11:10:01.713     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <571713145689985856> 23/11/2018 11:10:06.143     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <571713145689985856> 23/11/2018 11:10:12.712     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <571713145689985856> 23/11/2018 11:10:13.988     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <571713145689985856> 23/11/2018 11:10:16.461     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <237884139403661088> 23/11/2018 11:22:59.446     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:21:06.110     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:21:08.722     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:21:10.216     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:21:11.489     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:21:16.206     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:21:17.715     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:22:17.925     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <480680412709076288> 23/11/2018 12:26:17.521     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <76957631382110128> 23/11/2018 12:28:22.920     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.Exception: Type mismatch in param 2
+", Program: "Post Action_All".
+ <420010512766028800> 23/11/2018 12:39:44.971     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <420010512766028800> 23/11/2018 12:39:49.811     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <420010512766028800> 23/11/2018 12:39:52.124     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <420010512766028800> 23/11/2018 12:40:17.771     [Error  ] - [MgGui.dll] System.NullReferenceException : 
+   at com.magicsoftware.unipaas.management.tasks.TaskBase.getCtrl(Int32 ctrlIdx) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\management\tasks\TaskBase.cs:line 150
+   at com.magicsoftware.rte.CoreExecutor.EnableCutCopy(Int64 contextID, String taskTag, Int32 ditIdx, Boolean enable) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\CoreExecutor.cs:line 510
+   at com.magicsoftware.rte.GuiEventsProcessor.EnableCutCopy(GuiMgControl ctrl, Boolean enable) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\GuiEventsProcessor.cs:line 243
+   at com.magicsoftware.unipaas.Events.OnEnableCutCopy(GuiMgControl ctrl, Boolean enable) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Events.cs:line 523
+   at com.magicsoftware.unipaas.gui.low.GuiUtilsBase.enableDisableEvents(Object control, GuiMgControl editControl) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiUtils.cs:line 2161
+   at com.magicsoftware.unipaas.gui.low.GuiCommandQueueBase.selectText(GuiCommand guiCommand) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiCommandQueue.cs:line 5780
+   at com.magicsoftware.unipaas.gui.low.GuiCommandQueueBase.Run() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiCommandQueue.cs:line 3574
+Object reference not set to an instance of an object., Program: "".
+ <-1> 23/11/2018 12:40:18.655     [Error  ] - [MgGui.dll] 
+   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at com.magicsoftware.util.OSEnvironment.getStackTrace()
+   at com.magicsoftware.rte.CoreExecutor.WriteExceptionToLog(Int64 contextID, String msg) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\CoreExecutor.cs:line 116
+   at com.magicsoftware.rte.GuiEventsProcessor.WriteExceptionToLog(String message) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\GuiEventsProcessor.cs:line 1110
+   at com.magicsoftware.unipaas.Events.WriteExceptionToLog(String msg) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Events.cs:line 1413
+   at com.magicsoftware.unipaas.Events.WriteExceptionToLog(Exception ex) in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Events.cs:line 1419
+   at com.magicsoftware.unipaas.gui.low.GuiCommandQueueBase.Run() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GuiCommandQueue.cs:line 4077
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(ApplicationContext context)
+   at com.magicsoftware.unipaas.gui.low.GUIMain.messageLoop() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\gui\low\GUIMain.cs:line 101
+   at com.magicsoftware.unipaas.Manager.MessageLoop() in D:\magicxpaproject\_Trunk\Sources\RichClientDotNet\Gui\com\magicsoftware\unipaas\Manager.cs:line 293
+   at com.magicsoftware.rte.RTEmanager.ExecuteMainThread(String args) in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\Main.cs:line 138
+   at com.magicsoftware.rte.RTEmanager.Main() in D:\magicxpaproject\_Trunk\Sources\RTE\com\magicsoftware\rte\Main.cs:line 63
+ <477364830956659136> 23/11/2018 12:46:38.469     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <307028687206316864> 23/11/2018 12:48:17.938     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <390871373732184640> 23/11/2018 13:45:05.802     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <537537363441151360> 23/11/2018 14:01:05.898     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <118308794373693488> 23/11/2018 14:20:26.172     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <428841164334388608> 23/11/2018 14:36:41.957     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <18191315313455040> 23/11/2018 14:48:24.305     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <387906540793519040> 23/11/2018 15:15:19.238     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <350444602802390144> 23/11/2018 15:17:34.515     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <125937061492893840> 23/11/2018 15:21:01.263     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <166890408504845600> 23/11/2018 15:26:27.612     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <171235550253116736> 23/11/2018 15:37:43.119     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <150670842364576640> 23/11/2018 15:43:07.259     [Error  ] - HttpJavaWrapper::CreateHttpClient - "java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.magicsoftware.xpa.utils.http.HttpClient.<init>(HttpClient.java:50)
+", Program: "Post Action_All".
+ <-1> 23/11/2018 15:56:21.504     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
+ <-1> 23/11/2018 15:57:26.621     [Error  ] - Error - run-time engine was not found. Please restart the studio in order to run the application
