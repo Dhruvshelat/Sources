@@ -4,9 +4,9 @@
   <_Project>
     <ProjectName val="Client"/>
     <VCProjectID val="0"/>
-    <VCActive val="N"/>
+    <VCActive val="Y"/>
     <WorkOffline val="N"/>
-    <VCUseGitPlugin val="N"/>
+    <VCUseGitPlugin val="Y"/>
     <SourceDirectory val="Source"/>
     <ExportsDirectory val="Exports"/>
     <GUID val="{5B586CE5-4E0C-46CD-9AD5-DC9B9F736316}"/>
